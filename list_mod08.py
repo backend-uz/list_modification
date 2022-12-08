@@ -13,4 +13,4 @@ def square_and_remove_negative(lst):
             lst[i] = lst[i] ** 2
             ls.append(lst[i])
     return ls
-print(square_and_remove_negative([-1,-2,-3,-4]))
+print(square_and_remove_negative([-1,-2,-3,-4,8]))
