@@ -7,4 +7,14 @@ def square_and_remove_divisible_by_3(lst):
     Returns:
         list: list of all numbers are not divisible by 3.
     '''
-    return
+    ls = []
+    for i in range(len(lst)):
+        lst[i] = lst[i] ** 2
+        ls.append(lst[i])
+    idx = 0
+    while idx < len(ls):
+        if ls[idx] % 3 == 0:
+            ls.pop(idx)
+        idx += 1
+    return ls
+print(square_and_remove_divisible_by_3([1, 2, 3, 4, 9, 5]))
