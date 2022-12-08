@@ -7,4 +7,9 @@ def remove_positive(lst):
     Returns:
         list: list without positive numbers.
     '''
-    return
+    ls = []
+    for i in lst:
+        if i < 0:
+            ls.append(i)
+    return ls
+print(remove_positive([1,2,3,4,5,-1,-2,-9]))
