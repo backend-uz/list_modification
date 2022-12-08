@@ -7,4 +7,11 @@ def square_and_remove_even(lst):
     Returns:
         list: list of all even numbers are squared.
     '''
-    return
+    list1 = []
+    for i in range(len(lst)):
+        lst[i] = lst[i] ** 2
+        if lst[i] % 2 == 1:
+            list1.append(lst[i])
+    return list1
+print(square_and_remove_even([1,2,3,4,5]))
+
