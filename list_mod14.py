@@ -6,4 +6,14 @@ def replace_minimun_with_0(lst):
     Returns: 
         list: list minimum numbers are replaced with 0
     """
-    return
+    mn = 0
+    for i in range(len(lst)):
+        if lst[i] < lst[1]:
+            mn = lst[i]
+    i = 0
+    while i < len(lst):
+        if lst[i] == mn:
+            lst[i] = 0
+        i += 1
+    return lst
+print(replace_minimun_with_0([1,2,3,4,5,6]))
